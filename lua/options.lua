@@ -9,7 +9,7 @@ vim.opt.number = true
 vim.opt.scrolloff = 10
 
 -- Disable nerd font
-vim.g.have_nerd_font = false
+-- vim.g.have_nerd_font = false
 
 -- Don't show mode
 vim.opt.showmode = false
