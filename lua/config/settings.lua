@@ -4,6 +4,7 @@ vim.g.maplocalleader = ' '
 
 -- Numbers
 vim.opt.relativenumber = true
+vim.opt.number = true
 
 -- Lines between cursor and top/bottom
 vim.opt.scrolloff = 10
