@@ -1,16 +1,28 @@
--- Leaderkey
-vim.g.mapleader = ' '
-vim.g.maplocalleader = ' '
+vim.g.mapleader = " "
+vim.g.maplocalleader = " "
 
--- Numbers
 vim.opt.relativenumber = true
 vim.opt.number = true
 
--- Lines between cursor and top/bottom
-vim.opt.scrolloff = 10
+vim.opt.splitbelow = true
+vim.opt.splitright = true
 
--- Don't show mode
+vim.opt.wrap = false
+
+vim.opt.shiftwidth = 4
+vim.opt.tabstop = 4
+vim.opt.expandtab = true
+
+vim.opt.scrolloff = 999
+
 vim.opt.showmode = false
 
--- Sync clipboard between OS and Neovim
-vim.opt.clipboard = 'unnamedplus'
+vim.opt.clipboard = "unnamedplus"
+
+vim.opt.virtualedit = "block"
+
+vim.opt.inccommand = "split"
+
+vim.opt.ignorecase = true
+
+vim.opt.termguicolors = true
