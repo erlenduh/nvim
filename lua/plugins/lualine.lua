@@ -5,8 +5,11 @@ return {
 		dependencies = { "nvim-tree/nvim-web-devicons" },
 		config = function()
 			require("lualine").setup({
-				icons_enabled = true,
-				theme = "auto",
+                options = {
+                    icons_enabled = false,
+                    section_separators = { left = '', right = '' },
+                    component_separators = { left = '', right = '|' },
+                },
 			})
 		end,
 	},

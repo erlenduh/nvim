@@ -1,6 +1,14 @@
 return {
 
     {
+    "ellisonleao/gruvbox.nvim",
+    },
+
+    {
+    "loctvl842/monokai-pro.nvim"
+    },
+
+    {
     "navarasu/onedark.nvim",
     config = function()        
         require("onedark").setup ({
@@ -10,15 +18,15 @@ return {
 
     {
     "rebelot/kanagawa.nvim",
+    lazy = false,
+    priority = 1000,
+    config = function()
+        vim.cmd("colorscheme kanagawa")
+    end,
     },
 
     {
-        "folke/tokyonight.nvim",
-        lazy = false,
-        priority = 1000,
-        config = function()
-                vim.cmd("colorscheme tokyonight-night")
-        end,
+    "folke/tokyonight.nvim",
     },
 
 }
